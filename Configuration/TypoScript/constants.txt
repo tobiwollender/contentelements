@@ -1,0 +1,10 @@
+plugin.tx_contentelements {
+	view {
+		# cat=plugin.tx_contentelements/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:contentelements/Resources/Private/Templates/
+		# cat=plugin.tx_contentelements/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:contentelements/Resources/Private/Partials/
+		# cat=plugin.tx_contentelements/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:contentelements/Resources/Private/Layouts/
+	}
+}

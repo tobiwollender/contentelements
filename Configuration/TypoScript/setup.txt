@@ -1,0 +1,7 @@
+plugin.tx_contentelements {
+	view {
+		templateRootPath = {$plugin.tx_contentelements.view.templateRootPath}
+		partialRootPath = {$plugin.tx_contentelements.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_contentelements.view.layoutRootPath}
+	}
+}

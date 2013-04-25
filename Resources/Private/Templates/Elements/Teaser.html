@@ -1,0 +1,11 @@
+<f:debug>{data}</f:debug>
+
+<f:if condition="{data.header}">
+	<h3>{data.header}</h3>
+</f:if>
+
+<f:if condition="{data.image}">
+	<f:image src="uploads/pics/{data.image}" alt="{data.altText}" width="120"/>
+</f:if>
+
+<f:format.html>{data.bodytext}</f:format.html>
