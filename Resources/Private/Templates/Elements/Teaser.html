@@ -1,11 +1,13 @@
-<f:debug>{data}</f:debug>
+{namespace ce=TLID\Contentelements\ViewHelpers}
 
 <f:if condition="{data.header}">
 	<h3>{data.header}</h3>
 </f:if>
 
-<f:if condition="{data.image}">
-	<f:image src="uploads/pics/{data.image}" alt="{data.altText}" width="120"/>
-</f:if>
+<ce:fal uid="{data.uid}">
+	<f:for each="{objects}" as="image">
+		<f:image src="{image.publicUrl}" alt="{image.alternative}" width="120"/>
+	</f:for>
+</ce:fal>
 
 <f:format.html>{data.bodytext}</f:format.html>
