@@ -13,7 +13,7 @@ if (!defined ('TYPO3_MODE')) {
 
 );
 
-t3lib_extMgm::addTypoScript($_EXTKEY,'setup',
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript($_EXTKEY,'setup',
 	'[GLOBAL]
 tt_content.contentelements_teaser < tt_content.list.20.contentelements_contentrenderer
 tt_content.contentelements_teaser.switchableControllerActions.Elements.1 = teaser',
